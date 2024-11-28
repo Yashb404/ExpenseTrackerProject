@@ -16,6 +16,7 @@ public class ExpenseServiceImpl implements ExpenseService {
     private final ExpenseRepository expenseRepository;
 
 
+    @Override
     public Expense postExpense(ExpenseDTO expenseDTO){
         return saveOrUpdateExpense(new Expense(), expenseDTO);
     }
